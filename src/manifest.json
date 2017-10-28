@@ -1,0 +1,58 @@
+{
+	"manifest_version": 2,
+	"name": "__MSG_extensionName__", 
+	"description": "__MSG_extensionDescription__",
+	"version": "1.0",
+	"homepage_url": "https://github.com/nifey/happy_eyes_addon",
+	"applications": {
+		"gecko": {
+			"id": "@happy-eyes-addon"
+		}
+	},
+	"default_locale": "en",
+
+	"icons": {
+		"48": "img/happy_eyes.svg",
+		"64": "img/happy_eyes.svg",
+		"96": "img/happy_eyes.svg",
+		"128": "img/happy_eyes.svg",
+		"256": "img/happy_eyes.svg"
+	},
+
+	"permissions": [
+		"storage",
+		"activeTab",
+		"tabs"
+	],
+
+	"web_accessible_resources": [
+		"CSS/filter.css"
+	],
+
+	"browser_action": {
+		"browser_action": "true",
+		"default_title": "__MSG_tooltip__",
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "img/happy_eyes.svg",
+			"32": "img/happy_eyes.svg",
+			"64": "img/happy_eyes.svg"
+		} 
+	},
+
+	"background": {
+		"scripts": ["scripts/background.js"]
+	},
+
+	"options_ui": {
+		"page": "options.html"
+	},
+
+	"commands": {
+		"toggle-filter": {
+			"suggested_key": {
+				"default": "Alt+Shift+F"
+			}
+		}
+	}
+}

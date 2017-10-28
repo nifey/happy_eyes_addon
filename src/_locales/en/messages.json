@@ -1,0 +1,14 @@
+{
+	"extensionName": {
+		"message": "Happy Eyes",
+		"description": "Name of the extension."
+	},
+	"extensionDescription": {
+		"message": "An addon to reduce eye strain while browsing the internet.",
+		"description": "Description of the extension."
+	},
+	"tooltip": {
+		"message": "Happy Eyes",
+		"description": "Tooltip to be displayed on hovering."
+	}
+}
